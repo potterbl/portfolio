@@ -226,4 +226,12 @@ footer {
 		width: 100%;
 	}
 
+	.video-inner {
+		width: 450px;
+	}
+
+	.video-inner__2 {
+		width: 450px;
+	}
+	
 }
