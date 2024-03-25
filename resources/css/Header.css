@@ -1,9 +1,11 @@
 .header{
-    position: sticky;
+    position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 32px 0;
+    padding: 16px 0;
+    backdrop-filter: blur(2px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,4 +19,28 @@
     display: flex;
     align-items: center;
     column-gap: 32px;
+}
+.header{
+    width: calc(1920px - 720px);
+    margin: auto;
+}
+@media(max-width: 1200px){
+    .header{
+        width: calc(100% - 144px);
+    }
+}
+@media(max-width: 1024px){
+    .header{
+        width: calc(100% - 40px);
+    }
+}
+@media (max-width: 768px) {
+    .header{
+        width: calc(100% - 160px);
+    }
+}
+@media (max-width: 550px) {
+    .header{
+        width: calc(100% - 40px);
+    }
 }

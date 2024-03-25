@@ -1,11 +1,32 @@
 import "../../css/Header.css"
 import {usePage} from "@inertiajs/react";
 import {route} from "ziggy-js";
+import {useEffect, useState} from "react";
 
 const Header = () => {
     const currentPath = window.location.pathname;
+
+    const [offsetLeftValue, setOffsetLeftValue] = useState(0);
+
+    useEffect(() => {
+        const updateOffsetLeft = () => {
+            const container = document.querySelector('.container');
+            if (container) {
+                const newOffsetLeftValue = container.getBoundingClientRect().left;
+                setOffsetLeftValue(newOffsetLeftValue);
+            }
+        };
+
+        updateOffsetLeft();
+
+        window.addEventListener('resize', updateOffsetLeft);
+
+        return () => {
+            window.removeEventListener('resize', updateOffsetLeft);
+        };
+    }, []);
     return (
-        <div className="header">
+        <header className="header" style={{left: offsetLeftValue}}>
             <a href={route('main.index')} className="px16 bold">Vladislav P.</a>
             <div className="header-right">
                 <ul>
@@ -23,7 +44,7 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-        </div>
+        </header>
     );
 };
 

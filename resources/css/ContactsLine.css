@@ -1,10 +1,10 @@
 .contacts-line{
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 0;
     display: grid;
     place-items: center;
     row-gap: 8px;
+    z-index: 1;
 }
 .contact_line{
     display: block;
@@ -14,4 +14,11 @@
 }
 .contacts-line_img{
     width: 32px;
+    opacity: 0.65;
+    transition: opacity .3s ease;
+}
+@media (hover: hover) {
+    .contacts-line_img:hover{
+        opacity: 1;
+    }
 }

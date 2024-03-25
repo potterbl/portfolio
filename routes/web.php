@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\HomeController;
 use Inertia\Inertia;
+use \App\Http\Controllers\ContactsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,7 +42,11 @@ Route::get('/', [HomeController::class, "index"])->name('main.index');
 /** @noinspection PhpMultipleClassDeclarationsInspection */
 Route::group(['prefix' => 'contacts', 'as' => 'contacts.'], function () {
     /** @noinspection PhpMultipleClassDeclarationsInspection */
-   Route::get('/', ['as' => 'index', 'uses' => "ContactsController@index"]);
+   Route::get('/', ['as' => 'index', 'uses' => ContactsController::class.'@index']);
+});
+Route::group(['prefix' => 'projects', 'as' => 'projects.'], function () {
+    /** @noinspection PhpMultipleClassDeclarationsInspection */
+   Route::get('/', ['as' => 'index', 'uses' => ContactsController::class.'@index']);
 });
 
 require __DIR__.'/auth.php';

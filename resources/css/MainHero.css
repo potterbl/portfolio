@@ -10,3 +10,24 @@
     row-gap: 32px;
     grid-template-columns: 1fr;
 }
+.main-hero_right{
+    display: grid;
+    grid-template-rows: auto 37px;
+    width: 100%;
+}
+.main-hero_right-footer{
+    height: 100%;
+    width: calc(100% - 98px);
+    margin: auto;
+    border: 1px solid #ABB2BF;
+    padding: 0 8px;
+    display: grid;
+    align-items: center;
+    column-gap: 10px;
+    grid-template-columns: 16px auto;
+}
+.main-hero_right-footer_square{
+    width: 16px;
+    aspect-ratio: 1;
+    background-color: #C778DD;
+}

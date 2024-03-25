@@ -1,0 +1,25 @@
+.skills-block{
+    padding: 48px 0;
+    display: grid;
+    row-gap: 12px;
+}
+.skills-block_head{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.skills-block_head-hr{
+    width: 30%;
+    height: 2px;
+    background-color: #C778DD;
+    border: 0;
+}
+.skills-block_body{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.skills-block_body-img{
+    width: 100%;
+}
+.skills-block_body-content{
+}

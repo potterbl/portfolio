@@ -6,8 +6,6 @@
     color: white;
 }
 body{
-    /*background-image: url("../images/bg.webp");*/
-    /*background-size: 100% auto;*/
     background-color: #282C33;
 }
 button{
@@ -23,9 +21,6 @@ button{
         background-color: rgba(199, 120, 221, 0.2);
     }
 }
-.main{
-    margin-top: -85px;
-}
 ul{
     list-style-type: none;
 }
@@ -35,15 +30,27 @@ a{
 .px16{
     font-size: 16px;
 }
+.px24{
+    font-size: 24px;
+}
 .px32{
     font-size: 32px;
 }
+.px64{
+    font-size: 64px;
+}
 .bold{
     font-weight: bold;
+}
+.normal{
+    font-weight: normal;
 }
 .purple{
     color: #C778DD;
 }
 .gray{
     color: #ABB2BF;
+}
+.white{
+    color: white;
 }

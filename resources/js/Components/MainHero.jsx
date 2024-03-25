@@ -18,7 +18,13 @@ const MainHero = () => {
                 </a>
             </div>
             <div className="main-hero_right">
+                <div className="main-hero_right-img">
 
+                </div>
+                <div className="main-hero_right-footer">
+                    <span className="main-hero_right-footer_square"/>
+                    <p className="px16 gray">Currently working at <span className="white bold">Portfolio</span></p>
+                </div>
             </div>
         </div>
     );
