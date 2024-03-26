@@ -1,0 +1,38 @@
+.contacts{
+    padding: 48px 0;
+    display: grid;
+    row-gap: 24px;
+}
+.contacts_head{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+.contacts_head-hr{
+    border: 0;
+    height: 2px;
+    width: 15%;
+    background-color: #C778DD;
+}
+.contacts_body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 56px;
+}
+.contacts_body-info{
+    padding: 16px;
+    border: 1px solid #ABB2BF;
+    width: fit-content;
+    place-self: flex-end;
+    display: grid;
+    row-gap: 16px;
+}
+.contacts_body-info_content-item{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.contacts_body-info_content-item_img{
+    width: 32px;
+}

@@ -1,0 +1,22 @@
+.about-me{
+    padding: 48px 0;
+    display: grid;
+    row-gap: 24px;
+}
+.about-me_head{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+.about-me_head-hr{
+    width: 40%;
+    height: 2px;
+    border: 0;
+    background-color: #C778DD;
+}
+.about-me_body{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+}

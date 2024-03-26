@@ -6,6 +6,8 @@ import QuoteBlock from "@/Components/QuoteBlock.jsx";
 import bg from "../../images/bg.webp"
 import RecentProjects from "@/Components/RecentProjects.jsx";
 import SkillsBlock from "@/Components/SkillsBlock.jsx";
+import AboutMeBlock from "@/Components/AboutMeBlock.jsx";
+import ContactsBlock from "@/Components/ContactsBlock.jsx";
 
 const HomePage = () => {
     return (
@@ -17,6 +19,8 @@ const HomePage = () => {
                 <QuoteBlock/>
                 <RecentProjects/>
                 <SkillsBlock/>
+                <AboutMeBlock/>
+                <ContactsBlock/>
             </Container>
         </LayoutToMain>
     );

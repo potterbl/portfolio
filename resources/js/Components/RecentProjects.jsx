@@ -5,7 +5,7 @@ const RecentProjects = () => {
         <div className="recent-projects">
             <div className="recent-projects_head">
                 <div className="recent-projects_head-left">
-                    <p className="px32 bold"><span className="purple">#</span>projects</p>
+                    <h2 className="px32 bold"><span className="purple">#</span>projects</h2>
                     <hr className="recent-projects_head-left_hr"/>
                 </div>
                 <a href={route('projects.index')} className="px16">

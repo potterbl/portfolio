@@ -16,10 +16,42 @@
 }
 .skills-block_body{
     display: grid;
+    column-gap: 60px;
     grid-template-columns: 1fr 2fr;
 }
 .skills-block_body-img{
     width: 100%;
 }
 .skills-block_body-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 16px;
+    height: fit-content;
+    grid-template-areas: "a b c" ". d e";
+}
+.skills-block_item{
+    border: 1px solid #ABB2BF;
+}
+.skills-block_item-head{
+    border-bottom: 1px solid #ABB2BF;
+    padding: 8px;
+}
+.skills-block_item-body{
+    padding: 8px;
+}
+.skills-block_item:nth-child(1){
+    grid-area: a;
+}
+.skills-block_item:nth-child(2){
+    grid-area: b;
+}
+.skills-block_item:nth-child(3){
+    grid-area: c;
+}
+.skills-block_item:nth-child(4){
+    grid-area: d;
+}
+.skills-block_item:nth-child(5){
+    grid-area: e;
 }
