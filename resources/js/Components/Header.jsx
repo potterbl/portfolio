@@ -1,5 +1,5 @@
 import "../../css/Header.css"
-import {usePage} from "@inertiajs/react";
+import {Link, usePage} from "@inertiajs/react";
 import {route} from "ziggy-js";
 import {useEffect, useState} from "react";
 
@@ -27,20 +27,20 @@ const Header = () => {
     }, []);
     return (
         <header className="header" style={{left: offsetLeftValue}}>
-            <a href={route('main.index')} className="px16 bold">Vladislav P.</a>
+            <Link href={route('main.index')} className="px16 bold">Vladislav P.</Link>
             <div className="header-right">
                 <ul>
                     <li>
-                        <a className={`px16 ${currentPath === "/" ? 'bold' : ''}`} href={route('main.index')}><span className="purple">#</span>home</a>
+                        <Link className={`px16 ${currentPath === "/" ? 'bold' : ''}`} href={route('main.index')}><span className="purple">#</span>home</Link>
                     </li>
                     <li>
-                        <a className={`px16 ${currentPath === "/projects" ? 'bold' : ''}`} href=""><span className="purple">#</span>projects</a>
+                        <Link className={`px16 ${currentPath === "/projects" ? 'bold' : ''}`} href=""><span className="purple">#</span>projects</Link>
                     </li>
                     <li>
-                        <a className={`px16 ${currentPath === "/about" ? 'bold' : ''}`} href=""><span className="purple">#</span>about-me</a>
+                        <Link className={`px16 ${currentPath === "/about" ? 'bold' : ''}`} href=""><span className="purple">#</span>about-me</Link>
                     </li>
                     <li>
-                        <a className={`px16 ${currentPath === "/contacts" ? 'bold' : ''}`} href=""><span className="purple">#</span>contacts</a>
+                        <Link className={`px16 ${currentPath === "/contacts" ? 'bold' : ''}`} href={route('contacts.index')}><span className="purple">#</span>contacts</Link>
                     </li>
                 </ul>
             </div>

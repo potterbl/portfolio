@@ -1,5 +1,6 @@
 import "../../css/MainHero.css"
 import {route} from "ziggy-js";
+import {Link} from "@inertiajs/react";
 
 const MainHero = () => {
     return (
@@ -11,11 +12,11 @@ const MainHero = () => {
                 <p className="px16 gray">
                     He crafts responsive websites where technologies meet creativity
                 </p>
-                <a href={route('contacts.index')} style={{width: "max-content"}}>
+                <Link href={route('contacts.index')} style={{width: "max-content"}}>
                     <button className="px16">
                         Contact me
                     </button>
-                </a>
+                </Link>
             </div>
             <div className="main-hero_right">
                 <div className="main-hero_right-img">
@@ -23,7 +24,7 @@ const MainHero = () => {
                 </div>
                 <div className="main-hero_right-footer">
                     <span className="main-hero_right-footer_square"/>
-                    <p className="px16 gray">Currently working at <span className="white bold">Portfolio</span></p>
+                    <p className="px16 gray">Currently working at <span className="white bold">DBB Software</span></p>
                 </div>
             </div>
         </div>

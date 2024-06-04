@@ -1,5 +1,6 @@
 import "../../css/RecentProjects.css"
 import {route} from "ziggy-js";
+import {Link} from "@inertiajs/react";
 const RecentProjects = () => {
     return (
         <div className="recent-projects">
@@ -8,9 +9,9 @@ const RecentProjects = () => {
                     <h2 className="px32 bold"><span className="purple">#</span>projects</h2>
                     <hr className="recent-projects_head-left_hr"/>
                 </div>
-                <a href={route('projects.index')} className="px16">
+                <Link href={route('projects.index')} className="px16">
                 View all ~~&gt;
-                </a>
+                </Link>
             </div>
             <div className="recent-projects_body">
                 <div className="recent-project_item">

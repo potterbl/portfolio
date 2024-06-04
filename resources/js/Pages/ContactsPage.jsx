@@ -1,8 +1,9 @@
+import Layout from "@/Layouts/Layout.jsx";
+
 const ContactsPage = () => {
     return (
-        <div>
-
-        </div>
+        <Layout>
+        </Layout>
     );
 };
 
